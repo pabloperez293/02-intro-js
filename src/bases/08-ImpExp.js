@@ -1,9 +1,9 @@
 // Impor , export y func
 // import heroes from "./data/heroes"
 // import {heroes} from "./data/heroes" 1
-import heroes,{ owners } from "./data/heroes"
+import heroes,{ owners } from "../data/heroes"
 
-console.log(owners);
+// console.log(owners);
 // const getHeroByID = (id) =>{
 //     return heroes.find((heroes) =>  {
 //         if( heroes.id === id) {
@@ -13,12 +13,13 @@ console.log(owners);
 //         }
 //     });
 // }
-const getHeroByID = (id) =>{
+export const getHeroByID = (id) =>{
     return heroes.find((heroes) => heroes.id === id );
 }
-console.log(getHeroByID(2));
+// console.log(getHeroByID(2));
 
 // usamos el filter, con otra manera que no sea con  funcion de flecha
-const getHeroByOwner = ( owner ) => heroes.filter((heroes) =>  heroes.owner === owner);
+export const getHeroByOwner = ( owner ) => heroes.filter((heroes) =>  heroes.owner === owner);
 
-console.log(getHeroByOwner("Marvel"))
+// console.log(getHeroByOwner("Marvel"))
+
